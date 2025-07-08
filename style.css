@@ -150,3 +150,31 @@ h1 {
 .navbar-menu li button:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    top: 60px; /* Ajusta a posição da barra lateral */
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .navbar-menu li button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Botão para mostrar a sidebar */
+  .navbar-menu li.toggle-sidebar {
+    display: block;
+  }
+}
+
