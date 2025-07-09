@@ -161,6 +161,14 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+a {
+  color: #005d7a; /* cor do link */
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .sidebar {
