@@ -150,17 +150,7 @@ h1 {
 .navbar-menu li button:hover {
   text-decoration: underline;
 }
-#relacao {
-  scroll-margin-top: 100px;
-}
-[id] {
-  scroll-margin-top: 60px;
-}
 
-/* Para rolagem suave */
-html {
-  scroll-behavior: smooth;
-}
 a {
   color: #005d7a; /* cor do link */
   text-decoration: underline;
