@@ -284,10 +284,12 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
 <section id="denuncia" class="secao">
   <h1>Como Denunciar</h1>
   <p>Qualquer pessoa pode fazer uma denúncia ao Conselho Tutelar sempre que presenciar ou suspeitar de uma situação de violação de direitos de crianças ou adolescentes.</p>
+  
   <p>As denúncias podem ser feitas de forma anônima e serão analisadas com responsabilidade e sigilo.</p>
   <ul>
-    <li>Presencialmente em um Conselho Tutelar mais próximo</li>
-    <li>Por telefone (como o Disque 100 ou contatos locais)</li>
+    <li><a href="#relacao">Presencialmente em um Conselho Tutelar mais próximo</a></li>
+    
+    <li>Por telefone: Disque 100</li>
     <li><a href="https://www.gov.br/mdh/pt-br/canais_atendimento" target="_blank">Pelo site do Ministério dos Direitos Humanos</a></li>
 
   </ul>
@@ -297,6 +299,18 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
 
   </div>
   <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const link = document.querySelector('a[href="#relacao"]');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();           // evita comportamento padrão de âncora
+        mostrarSecao('relacao');     // exibe a seção com JavaScript
+        document.getElementById('relacao').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
+</script>
   
 </body>
 </html>
