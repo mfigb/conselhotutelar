@@ -49,4 +49,8 @@ function toggleSubmenu() {
   // Exibe a seção principal do ECA ao clicar no botão "ECA"
   mostrarSecao('eca');
 }
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('show');
+}
 

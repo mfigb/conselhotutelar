@@ -32,7 +32,6 @@
   <li><button onclick="mostrarSecao('nao-atribuicoes')">Limites de atuação</button></li>
   <li><button onclick="mostrarSecao('relacao')">Conselhos tutelares de Recife</button></li>
   
-
 </ul>
     </nav>
 
@@ -156,7 +155,7 @@
   <h1>O que NÃO é atribuição do Conselho Tutelar</h1>
   <p>Apesar de ser muito importante na proteção dos direitos de crianças e adolescentes, o Conselho Tutelar tem limites em sua atuação. Segue o que não faz parte de suas atribuições:</p>
   <ul>
-    <li>❌ <strong>Aplicar medidas socioeducativas:</strong> cabe ao Poder Judiciário e a órgãos especializados.</li>
+    <li>❌<strong>Aplicar medidas socioeducativas:</strong> cabe ao Poder Judiciário e a órgãos especializados.</li>
     <li>❌ <strong>Realizar busca e apreensão:</strong> o Conselho não tem poder de polícia e nem competência para efetuar prisões ou apreensões.</li>
     <li>❌ <strong>Executar serviços e programas de atendimento:</strong> cabe aos órgãos públicos e instituições a execução das medidas deliberadas.</li>
     <li>❌ <strong>Fiscalizar locais de lazer:</strong> bares, festas e eventos não são fiscalizados diretamente pelo Conselho Tutelar.</li>
@@ -284,10 +283,12 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
 <section id="denuncia" class="secao">
   <h1>Como Denunciar</h1>
   <p>Qualquer pessoa pode fazer uma denúncia ao Conselho Tutelar sempre que presenciar ou suspeitar de uma situação de violação de direitos de crianças ou adolescentes.</p>
+  
   <p>As denúncias podem ser feitas de forma anônima e serão analisadas com responsabilidade e sigilo.</p>
   <ul>
-    <li>Presencialmente em um Conselho Tutelar mais próximo</li>
-    <li>Por telefone (como o Disque 100 ou contatos locais)</li>
+    <li><a href="#relacao">Presencialmente em um Conselho Tutelar mais próximo</a></li>
+    
+    <li>Por telefone: Disque 100</li>
     <li><a href="https://www.gov.br/mdh/pt-br/canais_atendimento" target="_blank">Pelo site do Ministério dos Direitos Humanos</a></li>
 
   </ul>
@@ -297,6 +298,18 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
 
   </div>
   <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const link = document.querySelector('a[href="#relacao"]');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();           // evita comportamento padrão de âncora
+        mostrarSecao('relacao');     // exibe a seção com JavaScript
+        document.getElementById('relacao').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
+</script>
   
 </body>
 </html>
