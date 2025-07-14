@@ -173,7 +173,6 @@ a:hover {
 /* Sidebar responsiva */
 @media (max-width: 768px) {
   .sidebar {
-    position: absolute;
     top: 60px;
     left: -250px;
     width: 250px;
