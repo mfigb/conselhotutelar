@@ -291,17 +291,11 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
     }
   });
 </script>
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const link = document.querySelector('a[href="#relacao"]');
-    if (link) {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();           // evita comportamento padrão de âncora
-        mostrarSecao('relacao');     // exibe a seção com JavaScript
-        document.getElementById('relacao').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
-  });
+<script>
+  function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show'); // Abre ou fecha a sidebar
+  }
 </script>
   
 </body>

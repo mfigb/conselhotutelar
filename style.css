@@ -182,14 +182,25 @@ a:hover {
     color: white;
     padding: 20px;
     transition: left 0.3s ease;
+    position: fixed;
+    
+    
+
   }
 
   .sidebar.show {
     left: 0;
+   
   }
-
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+.content {
+    margin-left: 250px; /* Deixa espaço para a sidebar */
+  }
+}
   .navbar-menu li.toggle-sidebar {
     display: block;
   }
 } 
-}
