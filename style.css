@@ -187,16 +187,9 @@ a:hover {
 
   }
 
-  .sidebar.show {
-    left: 0;
-   
-  }
   .navbar-menu {
     flex-direction: column;
     gap: 10px;
   }
 }
-  .navbar-menu li.toggle-sidebar {
-    display: block;
-  }
-} 
+  } 
