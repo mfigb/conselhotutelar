@@ -196,9 +196,6 @@ a:hover {
     flex-direction: column;
     gap: 10px;
   }
-.content {
-    margin-left: 250px; /* Deixa espaço para a sidebar */
-  }
 }
   .navbar-menu li.toggle-sidebar {
     display: block;
