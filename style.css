@@ -72,16 +72,14 @@ h1 {
   overflow: hidden;
   display: block;
   position: relative;
+  top: 0%;
+  
 }
 
 .imagem-inicial img {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  object-fit: cover;
-  
-  
-  
-  
+   object-fit: cover;
 }
 
 .content p {
@@ -172,10 +170,11 @@ a:hover {
   text-decoration: none;
 }
 
+/* Sidebar responsiva */
 @media (max-width: 768px) {
   .sidebar {
     position: absolute;
-    top: 60px; /* Ajusta a posição da barra lateral */
+    top: 60px;
     left: -250px;
     width: 250px;
     height: 100%;
@@ -184,21 +183,13 @@ a:hover {
     padding: 20px;
     transition: left 0.3s ease;
   }
-.imagem-inicial img {
-    object-position: center; 
+
   .sidebar.show {
     left: 0;
   }
 
-  .navbar-menu li button {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  /* Botão para mostrar a sidebar */
   .navbar-menu li.toggle-sidebar {
     display: block;
   }
-}
-}
+} 
 }
