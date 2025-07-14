@@ -10,6 +10,7 @@
 
 <header class="navbar">
   <ul class="navbar-menu">
+    <button class="menu-toggle" onclick="alternarSidebar()">☰</button>
     <li><button onclick="voltarParaHome()">Home</button></li>
     <li><button onclick="mostrarSecao('denuncia')">Como Denunciar</button></li>
   </ul>
@@ -297,6 +298,13 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
     sidebar.classList.toggle('show'); // Abre ou fecha a sidebar
   }
 </script>
+<script>
+  function alternarSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('mostrar');
+  }
+</script>
+
   
 </body>
 </html>
