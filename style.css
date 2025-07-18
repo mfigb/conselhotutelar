@@ -68,18 +68,16 @@ h1 {
 
 .imagem-inicial {
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
-  display: block;
-  position: relative;
-  top: 0%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagem-inicial img {
-  width: 90%;
-  height: 100%;
-   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .content p {
