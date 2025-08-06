@@ -94,9 +94,11 @@
       <section id="conselho" class="secao">
         <h1>O que é o Conselho Tutelar </h1>
          <p>
-    O Conselho Tutelar é um órgão permanente e autônomo não juridiscional, com a função de zelar pelo cumprimento dos direitos das crianças e dos adolescentes. Esse órgão deve atuar sempre que tais direitos forem ameaçados ou violados, seja por ação ou omissão da sociedade, do Estado, da família ou dos próprios responsáveis legais.
+    O Conselho Tutelar é um órgão permanente e autônomo não juridiscional, com a função de zelar pelo cumprimento dos direitos das crianças e dos adolescentes, conforme definidos no Estatuto da Criança e do Adolescente – ECA (art. 131) . Esse órgão deve atuar sempre que tais direitos forem ameaçados ou violados, seja por ação ou omissão da sociedade, do Estado, da família ou dos próprios responsáveis legais.
   </p>
-  
+
+  <p>A autonomia e base legal do Conselho Tutelar estão estabelecidas nos artigos 131 e 132 do ECA (Lei 8.069/1990). O art. 131 prevê que o órgão não se subordina aos Poderes Executivo, Legislativo, Judiciário ou ao Ministério Público, garantindo independência funcional em suas decisões e atuações. Enquanto o art. 132 exige a existência de, no mínimo, um Conselho em cada município ou região administrativa, composto por cinco membros eleitos pela comunidade, com mandato definido, assegurando sua operacionalidade local.</p>
+
 </section>
 <section id="fundamentos" class="secao">
   <h1>Fundamentos Legais - Atribuições do Conselho Tutelar</h1>
@@ -371,22 +373,6 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
         mostrarSecao('relacao');     // exibe a seção com JavaScript
         document.getElementById('relacao').scrollIntoView({ behavior: 'smooth' });
       });
-    }
-  });
-</script>
-<script>
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "PrintScreen") {
-      const layer = document.createElement("div");
-      layer.style.position = "fixed";
-      layer.style.top = 0;
-      layer.style.left = 0;
-      layer.style.width = "100vw";
-      layer.style.height = "100vh";
-      layer.style.backgroundColor = "black";
-      layer.style.zIndex = 9999;
-      document.body.appendChild(layer);
-      setTimeout(() => document.body.removeChild(layer), 1000); // remove após 1 segundo
     }
   });
 </script>
