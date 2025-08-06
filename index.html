@@ -362,5 +362,36 @@ Estância, Jiquiá, Barro, Coqueiral, Curado, Jardim São Paulo, Sancho, Tejipi�
     });
   });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const link = document.querySelector('a[href="#relacao"]');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();           // evita comportamento padrão de âncora
+        mostrarSecao('relacao');     // exibe a seção com JavaScript
+        document.getElementById('relacao').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+<script>
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "PrintScreen") {
+      const layer = document.createElement("div");
+      layer.style.position = "fixed";
+      layer.style.top = 0;
+      layer.style.left = 0;
+      layer.style.width = "100vw";
+      layer.style.height = "100vh";
+      layer.style.backgroundColor = "black";
+      layer.style.zIndex = 9999;
+      document.body.appendChild(layer);
+      setTimeout(() => document.body.removeChild(layer), 1000); // remove após 1 segundo
+    }
+  });
+</script>
 </body>
+<footer>
+  <p>&copy; 2025 Mônica Figueirôa. Todos os direitos reservados. O conteúdo deste site é protegido por direitos autorais e não pode ser reproduzido sem autorização prévia.</p>
+</footer>
 </html>
